@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+  <!-- ======= NAVIGATION ======= -->
+  <nav id="desktop-nav">
+    <div class="logo">Orlando King</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Orlando King</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======= PROFILE ======= -->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="Orlando King profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello I'm</p>
+      <h1 class="title">Orlando King</h1>
+      <p class="section__text__p2">Art Director and Copywriter</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/orlando-king-a51495292'" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= ABOUT ======= -->
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>2+ Years<br />Retail Concierge at Precinct Properties</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>Bachelor of Communication Studies<br />Auckland University of Technology</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I am a 22-year-old soon-to-be graduate of Auckland University of Technology, pursuing a degree in Communication Studies with a specialisation in Advertising and Screen Production. I am a passionate and creative individual who hopes to build a career in media after graduating. I have a deep interest in the arts, which I explore through studying Screen Production at university, while also painting in my free time. Additionally, I am an avid reader with a strong interest in politics and current affairs.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'" />
+  </section>
+
+  <!-- ======= SKILLS ======= -->
+  <section id="skills">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="skills-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <article>
+            <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+            <div><h3>Adobe Photoshop & Premiere Pro</h3></div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+            <div><h3>Typography and layout</h3></div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+            <div><h3>Writing</h3></div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+            <div><h3>Directing</h3></div>
+          </article>
+        </div>
+        <div class="details-container">
+          <article>
+            <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+            <div><h3>Operating film equipment</h3></div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+            <div><h3>Understanding a brand's voice, identity, and strategy</h3></div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+            <div><h3>Storytelling</h3></div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+            <div><h3>Knowledge of media and popular trends</h3></div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+            <div><h3>Editing and proofreading</h3></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+  <div class="projects-grid">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+      <h2 class="project-title">LEGO: Mini Masters</h2>
+      <button class="btn project-btn" onclick="window.open('./assets/project-1.pdf')">See Project</button>
+    </div>
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+      <h2 class="project-title">NAB: The Grind</h2>
+      <button class="btn project-btn" onclick="window.open('./assets/project-2.pdf')">See Project</button>
+    </div>
+    <!-- Project 3 -->
+    <div class="project-card">
+      <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+      <h2 class="project-title">LIPS: Short Film</h2>
+      <button class="btn project-btn" onclick="location.href='https://www.youtube.com/watch?v=P2whZi6LRVo&ab_channel=OrlandoKing'">See Project</button>
+    </div>
+    <!-- Project 4 -->
+    <div class="project-card">
+      <img src="./assets/project-4.png" alt="Project 4" class="project-img" />
+      <h2 class="project-title">Auckland Transport: Walking Workers Bus</h2>
+      <button class="btn project-btn" onclick="window.open('./assets/project-4.pdf')">See Project</button>
+    </div>
+    <!-- Project 5 -->
+    <div class="project-card">
+      <img src="./assets/project-5.png" alt="Project 5" class="project-img" />
+      <h2 class="project-title">Expedia: UnGuided Tour</h2>
+      <button class="btn project-btn" onclick="window.open('./assets/project-5.pdf')">See Project</button>
+    </div>
+    <!-- Project 6 -->
+    <div class="project-card">
+      <img src="./assets/project-6.png" alt="Project 6" class="project-img" />
+      <h2 class="project-title">Westpac: See Spending</h2>
+      <button class="btn project-btn" onclick="window.open('./assets/project-6.pdf')">See Project</button>
+    </div>
+  </div>
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'" />
+</section>
+<section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container ">
+            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+            <p><a href="mailto:sirorlandoking@gmai.com">sirorlandoking@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container ">
+            <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+            <p><a href="https://www.linkedin.com/in/orlando-king-a51495292">LinkedIn</a></p>
+        </div>
+    </div>
+</section>
+<footer>
+    <nav> 
+     <div class="nav-links-container">
+       <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul> 
+     </div>
+    </nav>
+    <p>Copyright &#169; 2025 Orlando King. All Rights Reserved.</p>
+</footer>
+
+
+  <!-- ======= JS ======= -->
+  <script src="script.js"></script>
+</body>
+</html>
